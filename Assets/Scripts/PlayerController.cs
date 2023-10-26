@@ -45,7 +45,7 @@ public class PlayerController : MonoBehaviour
         private set       //Tady se nastaví zda chodí nebo ne v animatoru
         {
             _isMoving = value;
-            animator.SetBool("isMoving", value);
+            animator.SetBool(AnimationStrings.isMoving, value);
         }
     }
 
@@ -60,7 +60,7 @@ public class PlayerController : MonoBehaviour
         private set
         {
             _isRunning = value;
-            animator.SetBool("isRunning", value);
+            animator.SetBool(AnimationStrings.isRunning, value);
         }
     }
 
