@@ -19,27 +19,35 @@ public class PlayerController : MonoBehaviour
     public float CurrentMoveSpeed //Nastavi se rychlost chuze podle toho jestli behame nebo ne
     {
         get
-        {   if (IsMoving && !touchingDirections.IsOnWall)
+        {   
+            if(CanMove)
             {
-                if (touchingDirections.IsGrounded)
+                if (IsMoving && !touchingDirections.IsOnWall)
                 {
-                    if (IsRunning)
+                    if (touchingDirections.IsGrounded)
                     {
-                        return runSpeed;
+                        if (IsRunning)
+                        {
+                            return runSpeed;
+                        }
+                        else
+                        {
+                            return walkSpeed;
+                        }
                     }
                     else
                     {
-                        return walkSpeed;
+                        return airWalkSpeed; // Pohyb ve vzduchu
                     }
                 }
                 else
                 {
-                    return airWalkSpeed; // Pohyb ve vzduchu
+                    return 0;  //Nastavi se Idle
                 }
-            } 
+            }
             else
             {
-                return 0;  //Nastavi se Idle
+                return 0; //Ondøej pøi tom, co bude útoèit tak se nebude moct hýbat
             }
         }
     }
@@ -89,6 +97,14 @@ public class PlayerController : MonoBehaviour
             }
 
             _isFacingRight = value;
+        }
+    }
+
+    public bool CanMove
+    {
+        get 
+        {
+            return animator.GetBool(AnimationStrings.canMove);
         }
     }
 
@@ -146,10 +162,18 @@ public class PlayerController : MonoBehaviour
 
     public void OnJump(InputAction.CallbackContext context)
     {
-        if(context.started && touchingDirections.IsGrounded)  //Pozdìji to musím zmìnit, aby se mohl pøidat double jump (smaže se: && touchingDirections.IsGrounded)
+        if(context.started && touchingDirections.IsGrounded && CanMove)  //Pozdìji to musím zmìnit, aby se mohl pøidat double jump (smaže se: && touchingDirections.IsGrounded)
         {
-            animator.SetTrigger(AnimationStrings.jump);
+            animator.SetTrigger(AnimationStrings.jumpTrigger);
             rb.velocity = new Vector2(rb.velocity.x, jumpImpulse);
+        }
+    }
+
+    public void OnAttack(InputAction.CallbackContext context)
+    {
+        if(context.started)
+        {
+            animator.SetTrigger(AnimationStrings.attackTrigger);
         }
     }
 }
