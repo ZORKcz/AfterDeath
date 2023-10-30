@@ -29,7 +29,7 @@ public class SetBoolBehaviour : StateMachineBehaviour
     {
         if (updateOnState)
         {
-            animator.SetBool(boolName, valueOnEnter);
+            animator.SetBool(boolName, valueOnExit);
         }
     }
     // OnStateMove is called before OnStateMove is called on any state inside this state machine
