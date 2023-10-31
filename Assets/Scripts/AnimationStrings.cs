@@ -21,4 +21,5 @@ internal class AnimationStrings //Třída, do které se budou ukládat parametry
     internal static string hitTrigger = "hit";
     internal static string lockVelocity = "lockVelocity";
     internal static string attackCooldown = "attackCooldown";
+    internal static string rangedAttackTrigger = "rangedAttack";
 }
