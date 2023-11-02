@@ -12,7 +12,7 @@ Our Team:
 pending
 
 ## Bugs
-Contact us any time, if you spot some bugs.
+Contact us any time, if you spot any bugs.
 ### Contacts
 drasarb.05@spst.eu
 banat.05@spst.eu
