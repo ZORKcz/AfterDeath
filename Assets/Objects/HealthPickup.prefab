@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1309827319627930158}
   - component: {fileID: 7896427982604488695}
   - component: {fileID: 2617906003684901843}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: HealthPickup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthRestore: 25
+  spinRotationSpeed: {x: 0, y: 180, z: 0}
 --- !u!58 &2617906003684901843
 CircleCollider2D:
   m_ObjectHideFlags: 0

@@ -8,13 +8,14 @@ using UnityEngine.Rendering;
 public class Damageable : MonoBehaviour
 {
     public UnityEvent<int, Vector2> damagableHit;
+    public UnityEvent damageableDeath;
 
     Animator animator;
 
     [SerializeField]private int _maxHealth = 100;
 
     public int MaxHealth
-    {
+    { 
         get
         {
             return _maxHealth;
@@ -61,6 +62,11 @@ public class Damageable : MonoBehaviour
             _isAlive = value;
             animator.SetBool(AnimationStrings.isAlive, value);
             Debug.Log("IsAlivet set " + value); 
+
+            if(value == false)
+            {
+                damageableDeath.Invoke();
+            }
         }
     }
 
