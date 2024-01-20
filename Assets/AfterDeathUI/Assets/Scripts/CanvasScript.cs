@@ -12,6 +12,14 @@ public class CanvasScript : MonoBehaviour
     public GameObject mainMenuSoundtrack;
     public GameObject videoPlayer;
     public GameObject videoRenderer;
+    public GameObject skipVideoText;
+    public static bool jeMozneSkipnoutCutscenu;
+
+    void Start()
+    {
+        skipVideoText.SetActive(false);
+        jeMozneSkipnoutCutscenu = false;
+    }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.T) && Input.GetKeyDown(KeyCode.E))
@@ -54,6 +62,8 @@ public class CanvasScript : MonoBehaviour
     }
     public void PlayButton()
     {
+        skipVideoText.SetActive(true);
+        jeMozneSkipnoutCutscenu = true;
         foreach (GameObject UIElement in UIElementsHlavniMenu)
         {
             UIElement.SetActive(true);
