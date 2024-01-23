@@ -100,7 +100,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthRestore: 25
-  spinRotationSpeed: {x: 0, y: 180, z: 0}
+  floatSpeed: 2.5
+  floatDistance: 0.3
 --- !u!58 &2617906003684901843
 CircleCollider2D:
   m_ObjectHideFlags: 0

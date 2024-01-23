@@ -5,7 +5,8 @@ using UnityEngine;
 public class HealthPickup : MonoBehaviour
 {
     public int healthRestore = 25;
-    public Vector3 spinRotationSpeed = new Vector3 (0, 180, 0);
+    public float floatSpeed = 2.5f;  //Rychlost citronu
+    public float floatDistance = 0.3f;  //Vzdalenost nahoru
 
     AudioSource pickupSource;
 
@@ -41,6 +42,8 @@ public class HealthPickup : MonoBehaviour
 
     private void Update()
     {
-        transform.eulerAngles += spinRotationSpeed * Time.deltaTime;
+        float yMove = Mathf.Sin(Time.time * floatSpeed) * floatDistance;
+        transform.position = new Vector3(transform.position.x, Mathf.Lerp(transform.position.y, transform.position.y + yMove, Time.deltaTime), transform.position.z);
     }
+
 }
