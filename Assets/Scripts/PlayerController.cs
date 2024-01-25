@@ -13,15 +13,21 @@ public class PlayerController : MonoBehaviour
     public float runSpeed = 8f;
     public float airWalkSpeed = 4f;
     public float jumpImpulse = 10f;
+    public int maxArrows = 6;
+    private int currentArrows = 0;
+    private bool isRangedAttackOnCooldown = false;
     Vector2 moveInput;
     TouchingDirections touchingDirections;
     Damageable damageable;
 
+
+
+
     public float CurrentMoveSpeed //Nastavi se rychlost chuze podle toho jestli behame nebo ne
     {
         get
-        {   
-            if(CanMove)
+        {
+            if (CanMove)
             {
                 if (IsMoving && !touchingDirections.IsOnWall)
                 {
@@ -103,7 +109,7 @@ public class PlayerController : MonoBehaviour
 
     public bool CanMove
     {
-        get 
+        get
         {
             return animator.GetBool(AnimationStrings.canMove);
         }
@@ -122,15 +128,17 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
+        currentArrows = maxArrows;
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         touchingDirections = GetComponent<TouchingDirections>();
         damageable = GetComponent<Damageable>();
+
     }
 
     private void FixedUpdate()
     {
-        if(!damageable.LockVelocity)
+        if (!damageable.LockVelocity)
         {
             rb.velocity = new Vector2(moveInput.x * CurrentMoveSpeed, rb.velocity.y);
         }
@@ -142,7 +150,7 @@ public class PlayerController : MonoBehaviour
     {
         moveInput = context.ReadValue<Vector2>();
 
-        if(IsAlive)
+        if (IsAlive)
         {
             IsMoving = moveInput != Vector2.zero;
             SetFacingDifection(moveInput);
@@ -181,7 +189,7 @@ public class PlayerController : MonoBehaviour
 
     public void OnJump(InputAction.CallbackContext context)
     {
-        if(context.started && touchingDirections.IsGrounded && CanMove)  //Pozdìji to musím zmìnit, aby se mohl pøidat double jump (smaže se: && touchingDirections.IsGrounded)
+        if (context.started && touchingDirections.IsGrounded && CanMove)  //Pozdìji to musím zmìnit, aby se mohl pøidat double jump (smaže se: && touchingDirections.IsGrounded)
         {
             animator.SetTrigger(AnimationStrings.jumpTrigger);
             rb.velocity = new Vector2(rb.velocity.x, jumpImpulse);
@@ -190,7 +198,7 @@ public class PlayerController : MonoBehaviour
 
     public void OnAttack(InputAction.CallbackContext context)
     {
-        if(context.started)
+        if (context.started)
         {
             animator.SetTrigger(AnimationStrings.attackTrigger);
         }
@@ -198,10 +206,19 @@ public class PlayerController : MonoBehaviour
 
     public void OnRangedAttack(InputAction.CallbackContext context)
     {
-        if (context.started)
+        if (context.started && currentArrows > 0 && !isRangedAttackOnCooldown)
         {
             animator.SetTrigger(AnimationStrings.rangedAttackTrigger);
+            currentArrows--;
+
+            isRangedAttackOnCooldown = true;  //Nastaví se cooldown na 1 sekundu
+            Invoke("ResetRangedAttackCooldown", 1f);
         }
+    }
+
+    private void ResetRangedAttackCooldown()
+    {
+        isRangedAttackOnCooldown = false;
     }
 
     public void OnHit(int damage, Vector2 knockback)
@@ -209,3 +226,5 @@ public class PlayerController : MonoBehaviour
         rb.velocity = new Vector2(knockback.x, rb.velocity.y + knockback.y);
     }
 }
+
+
