@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class PlayOneShotBehaviour : StateMachineBehaviour
 {
-    public AudioClip soundToPlay;
+    //Test pøejmenování audioclipu, pùvodní jméno promìnné: soundToPlay
+    public AudioClip[] soundToPlay;
+
+    public int randomIndex;
     public float volume = 1f;
     public bool playOnEnter = true, playOnExit = false, playAfterDelay = false;
     public float playDelay = 0.25f;
@@ -14,9 +17,11 @@ public class PlayOneShotBehaviour : StateMachineBehaviour
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        randomIndex = Random.Range(0, 3);
+        Debug.Log(randomIndex);
         if(playOnEnter)
         {
-            AudioSource.PlayClipAtPoint(soundToPlay, animator.gameObject.transform.position, volume);
+            AudioSource.PlayClipAtPoint(soundToPlay[randomIndex], animator.gameObject.transform.position, volume);
         }
 
         timeSinceEntered = 0f;
@@ -32,7 +37,7 @@ public class PlayOneShotBehaviour : StateMachineBehaviour
 
             if(timeSinceEntered > playDelay)
             {
-                AudioSource.PlayClipAtPoint(soundToPlay, animator.gameObject.transform.position, volume);
+                AudioSource.PlayClipAtPoint(soundToPlay[randomIndex], animator.gameObject.transform.position, volume);
                 hasDelayedSoundPlayed = true;
             }
         }
@@ -43,7 +48,7 @@ public class PlayOneShotBehaviour : StateMachineBehaviour
     {
         if (playOnExit)
         {
-            AudioSource.PlayClipAtPoint(soundToPlay, animator.gameObject.transform.position, volume);
+            AudioSource.PlayClipAtPoint(soundToPlay[randomIndex], animator.gameObject.transform.position, volume);
         }
     }
 

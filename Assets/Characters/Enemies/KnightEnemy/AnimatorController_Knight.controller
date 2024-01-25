@@ -140,7 +140,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3efbc56886955024e85dfdc96a5c8faa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundToPlay: {fileID: 8300000, guid: d7b3edca22f52eb49858dfbceb69ebdd, type: 3}
+  soundToPlay:
+  - {fileID: 8300000, guid: d7b3edca22f52eb49858dfbceb69ebdd, type: 3}
+  - {fileID: 8300000, guid: d7b3edca22f52eb49858dfbceb69ebdd, type: 3}
+  - {fileID: 8300000, guid: d7b3edca22f52eb49858dfbceb69ebdd, type: 3}
+  randomIndex: 0
   volume: 1
   playOnEnter: 1
   playOnExit: 0
@@ -158,7 +162,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3efbc56886955024e85dfdc96a5c8faa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundToPlay: {fileID: 8300000, guid: e49641715a640034cae197e320aebd72, type: 3}
+  soundToPlay:
+  - {fileID: 8300000, guid: e49641715a640034cae197e320aebd72, type: 3}
+  - {fileID: 8300000, guid: e49641715a640034cae197e320aebd72, type: 3}
+  - {fileID: 8300000, guid: e49641715a640034cae197e320aebd72, type: 3}
+  randomIndex: 0
   volume: 1
   playOnEnter: 1
   playOnExit: 0
@@ -242,7 +250,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3efbc56886955024e85dfdc96a5c8faa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundToPlay: {fileID: 8300000, guid: 93a286dea591bea4d9e7183858eed5a8, type: 3}
+  soundToPlay:
+  - {fileID: 8300000, guid: 93a286dea591bea4d9e7183858eed5a8, type: 3}
+  - {fileID: 8300000, guid: 93a286dea591bea4d9e7183858eed5a8, type: 3}
+  - {fileID: 8300000, guid: 93a286dea591bea4d9e7183858eed5a8, type: 3}
+  randomIndex: 0
   volume: 1
   playOnEnter: 1
   playOnExit: 0
