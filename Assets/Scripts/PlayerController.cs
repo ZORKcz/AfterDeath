@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour
     {
         get
         {
-            if (CanMove)
+            if (CanMove && !console.isConsoleOn)
             {
                 if (IsMoving && !touchingDirections.IsOnWall)
                 {

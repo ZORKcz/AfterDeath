@@ -172,10 +172,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1000, y: 800}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -242,6 +242,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   outputText: {fileID: 339426618}
   inputField: {fileID: 1818849866}
+  indexOfCodes: 0
 --- !u!1 &339426615
 GameObject:
   m_ObjectHideFlags: 0
@@ -277,7 +278,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.0896301, y: 33.951202}
+  m_AnchoredPosition: {x: -67.1, y: 42}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &339426617
@@ -371,7 +372,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: -144.87473}
+  m_margin: {x: 0, y: 0, z: -297.4956, w: -144.87473}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -703,8 +704,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 105.8, y: -97.5}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 248.9, y: -116}
+  m_SizeDelta: {x: 231.8069, y: 114.9137}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1568564237
 MonoBehaviour:
@@ -781,8 +782,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50.510807, y: -107.31707}
-  m_SizeDelta: {x: 213.1294, y: 30}
+  m_AnchoredPosition: {x: 114.9, y: -107.31707}
+  m_SizeDelta: {x: 502.4584, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1818849866
 MonoBehaviour:
@@ -863,19 +864,7 @@ MonoBehaviour:
       m_Calls: []
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 129512000}
-        m_TargetAssemblyTypeName: console, Assembly-CSharp
-        m_MethodName: ConsoleInput
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_OnTouchScreenKeyboardStatusChanged:
     m_PersistentCalls:
       m_Calls: []

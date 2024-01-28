@@ -48,7 +48,8 @@ public class Damageable : MonoBehaviour
     }
 
     [SerializeField]private bool _isAlive = true;
-    [SerializeField]private bool isInvincible = false;
+    //Pøepsal jsem isInvincible na public, abych otestoval konzoli. 27.01.2024
+    [SerializeField]public bool isInvincible = false;
 
     private float timeSinceHit = 0;
     public float invincibilityTime = 0.25f;
