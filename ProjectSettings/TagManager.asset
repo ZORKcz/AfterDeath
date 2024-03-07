@@ -3,16 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-<<<<<<< HEAD
-  - Key
-  - Spike
-=======
-  - leatherBoots
-  - axe
-  - arrow
-  - armor
->>>>>>> main
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -20,13 +11,13 @@ TagManager:
   - 
   - Water
   - UI
-  - Ground
-  - Player
-  - Enemy
-  - PlayerHitbox
-  - EnemyHitbox
-  - GroundDetection
-  - Pickup
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 
@@ -47,12 +38,6 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Background
-    uniqueID: 2944069359
-    locked: 0
-  - name: Ground
-    uniqueID: 1036259081
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
