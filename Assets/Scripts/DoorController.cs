@@ -25,7 +25,7 @@ public class DoorController : MonoBehaviour
 
         if(!locked && distance < 0.5f)
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(2);
         }
     }
 

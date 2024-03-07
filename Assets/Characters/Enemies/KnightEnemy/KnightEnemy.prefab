@@ -105,11 +105,11 @@ GameObject:
   - component: {fileID: 1825383668749570651}
   - component: {fileID: 1227918704527842252}
   - component: {fileID: 4927598641856267158}
-  - component: {fileID: 1879232732613775339}
   - component: {fileID: 169688892066815670}
   - component: {fileID: 1703819659133503495}
   - component: {fileID: 768222487388983279}
   - component: {fileID: 909511687010245807}
+  - component: {fileID: 5502599191756554891}
   m_Layer: 8
   m_Name: KnightEnemy
   m_TagString: Untagged
@@ -214,41 +214,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!70 &1879232732613775339
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1698319817263068390}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.12140155, y: 0.026006937}
-  m_Size: {x: 1.1877341, y: 2.3549228}
-  m_Direction: 0
 --- !u!114 &169688892066815670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -357,6 +322,51 @@ MonoBehaviour:
   _isAlive: 1
   isInvincible: 0
   invincibilityTime: 0.25
+--- !u!61 &5502599191756554891
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1698319817263068390}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.1345452, y: 0.016190767}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.47, y: 0.23}
+    oldSize: {x: 7.5, y: 5}
+    newSize: {x: 7.5, y: 5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.2040951, y: 2.3323817}
+  m_EdgeRadius: 0
 --- !u!1 &4944651256211974748
 GameObject:
   m_ObjectHideFlags: 0
@@ -472,7 +482,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4e77700da8f3be4bbc36c1b612b48e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackDamage: 35
+  attackDamage: 23
   knockback: {x: 5, y: 2}
 --- !u!1 &7237076584291504469
 GameObject:
