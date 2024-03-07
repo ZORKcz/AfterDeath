@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     public float airWalkSpeed = 4f;
     public float jumpImpulse = 10f;
     public int maxArrows = 6;
-    private int currentArrows = 0;
+    public int currentArrows = 0;
     private bool isRangedAttackOnCooldown = false;
     Vector2 moveInput;
     TouchingDirections touchingDirections;
