@@ -687,6 +687,7 @@ MonoBehaviour:
   airWalkSpeed: 5
   jumpImpulse: 10
   maxArrows: 6
+  currentArrows: 0
   _isMoving: 0
   _isRunning: 0
   _isFacingRight: 1
@@ -886,7 +887,7 @@ MonoBehaviour:
     useOutsideNormalAngle: 0
     layerMask:
       serializedVersion: 2
-      m_Bits: 64
+      m_Bits: 0
     minDepth: 0
     maxDepth: 0
     minNormalAngle: 0
