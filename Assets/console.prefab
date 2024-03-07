@@ -333,10 +333,10 @@ MonoBehaviour:
   outputText: {fileID: 8496859314074497979}
   playerBody: {fileID: 0}
   playerObject: {fileID: 0}
-  flyingCube: {fileID: 0}
+  flyingCube: {fileID: 426564336514028040, guid: 19ef70a9d574a8b4696a2882a96eda6d, type: 3}
   inputField: {fileID: 5273499255192072987}
   indexOfCodes: 0
-  canvas: {fileID: 0}
+  canvas: {fileID: 1954728446102667325}
   jojoSoundtrack: {fileID: 0}
   music: {fileID: 0}
   musicPlayer: {fileID: 0}
