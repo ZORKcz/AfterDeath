@@ -63,6 +63,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 3ac655be85be3e041b92d67aec860dad, type: 3}
   - {fileID: 8300000, guid: 3ac655be85be3e041b92d67aec860dad, type: 3}
   - {fileID: 8300000, guid: 3ac655be85be3e041b92d67aec860dad, type: 3}
+  outputAudioMixerGroup: {fileID: -6801603979056470117, guid: bd25c6701c588b74aae3e39481ab0d65, type: 2}
   randomIndex: 0
   volume: 1
   playOnEnter: 1
@@ -461,6 +462,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: d7b3edca22f52eb49858dfbceb69ebdd, type: 3}
   - {fileID: 8300000, guid: d7b3edca22f52eb49858dfbceb69ebdd, type: 3}
   - {fileID: 8300000, guid: d7b3edca22f52eb49858dfbceb69ebdd, type: 3}
+  outputAudioMixerGroup: {fileID: -6801603979056470117, guid: bd25c6701c588b74aae3e39481ab0d65, type: 2}
   randomIndex: 0
   volume: 1
   playOnEnter: 1
@@ -483,6 +485,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: e49641715a640034cae197e320aebd72, type: 3}
   - {fileID: 8300000, guid: e49641715a640034cae197e320aebd72, type: 3}
   - {fileID: 8300000, guid: e49641715a640034cae197e320aebd72, type: 3}
+  outputAudioMixerGroup: {fileID: -6801603979056470117, guid: bd25c6701c588b74aae3e39481ab0d65, type: 2}
   randomIndex: 0
   volume: 1
   playOnEnter: 1
