@@ -1167,7 +1167,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1036259081
-  m_SortingLayer: -1
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -8275,7 +8275,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1036259081
-  m_SortingLayer: -1
+  m_SortingLayer: 0
   m_SortingOrder: -3
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -26343,7 +26343,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1036259081
-  m_SortingLayer: -1
+  m_SortingLayer: 0
   m_SortingOrder: -1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -26657,6 +26657,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5205053815539745227, guid: 8c5cad9a6399dd54a9ef897bf400eeb6, type: 3}
+      propertyPath: castFilter.layerMask.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6691092673145205250, guid: 8c5cad9a6399dd54a9ef897bf400eeb6, type: 3}
       propertyPath: m_Name
       value: Player
@@ -28467,7 +28471,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1036259081
-  m_SortingLayer: -1
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 51c0fb1b91298b547b477ad26409163a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -31348,7 +31352,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1036259081
-  m_SortingLayer: -1
+  m_SortingLayer: 0
   m_SortingOrder: -2
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -31780,9 +31784,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3e673e21028b2a468a67e7bd70b8ff0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioMixer: {fileID: 24100000, guid: 4b9a997d08c475f428287729fe3dc0de, type: 2}
+  audioMixerMusic: {fileID: 0}
   resolutionDropdown: {fileID: 1383521239}
-  volumeSlider: {fileID: 18878334}
+  volumeSliderMusic: {fileID: 0}
+  sfxSlider: {fileID: 0}
 --- !u!114 &2006565145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32223,6 +32228,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   introSource: {fileID: 2015631144}
   loopSource: {fileID: 2015631142}
+  playOnlyOnce: 0
 --- !u!82 &2015631144
 AudioSource:
   m_ObjectHideFlags: 0

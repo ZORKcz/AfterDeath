@@ -45108,7 +45108,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 210, y: -86}
+  m_AnchoredPosition: {x: 210, y: 0}
   m_SizeDelta: {x: 320, y: 28.061401}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &639896649
@@ -53430,6 +53430,10 @@ PrefabInstance:
     - target: {fileID: 2189932586234770250, guid: 8c5cad9a6399dd54a9ef897bf400eeb6, type: 3}
       propertyPath: maxArrows
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5205053815539745227, guid: 8c5cad9a6399dd54a9ef897bf400eeb6, type: 3}
+      propertyPath: castFilter.layerMask.m_Bits
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6497818766337673111, guid: 8c5cad9a6399dd54a9ef897bf400eeb6, type: 3}
       propertyPath: _maxHealth
