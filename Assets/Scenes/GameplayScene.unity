@@ -45548,8 +45548,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Arrows
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ef64a2f8dd784254c94d1872164628b0, type: 2}
+  m_sharedMaterial: {fileID: 7604933061263608355, guid: ef64a2f8dd784254c94d1872164628b0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -45820,8 +45820,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: /6
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ef64a2f8dd784254c94d1872164628b0, type: 2}
+  m_sharedMaterial: {fileID: 7604933061263608355, guid: ef64a2f8dd784254c94d1872164628b0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -52880,6 +52880,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2893183074871834257, guid: b08a4763467889a44b3879e051d9f76e, type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4023580700779209401, guid: b08a4763467889a44b3879e051d9f76e, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: ef64a2f8dd784254c94d1872164628b0, type: 2}
+    - target: {fileID: 4023580700779209401, guid: b08a4763467889a44b3879e051d9f76e, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 7604933061263608355, guid: ef64a2f8dd784254c94d1872164628b0, type: 2}
+    - target: {fileID: 4023580700779209401, guid: b08a4763467889a44b3879e051d9f76e, type: 3}
+      propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6966940510572740220, guid: b08a4763467889a44b3879e051d9f76e, type: 3}
