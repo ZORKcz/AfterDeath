@@ -126,6 +126,28 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!114 &-5546715017882618840
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3efbc56886955024e85dfdc96a5c8faa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundToPlay:
+  - {fileID: 8300000, guid: 93a286dea591bea4d9e7183858eed5a8, type: 3}
+  - {fileID: 8300000, guid: 93a286dea591bea4d9e7183858eed5a8, type: 3}
+  - {fileID: 8300000, guid: 93a286dea591bea4d9e7183858eed5a8, type: 3}
+  randomIndex: 0
+  volume: 1
+  playOnEnter: 1
+  playOnExit: 0
+  playAfterDelay: 0
+  playDelay: 0.25
 --- !u!1102 &-4238292949882015297
 AnimatorState:
   serializedVersion: 6
@@ -210,6 +232,7 @@ AnimatorStateMachine:
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours:
   - {fileID: 986995976841410118}
+  - {fileID: -5546715017882618840}
   m_AnyStatePosition: {x: -160, y: 120, z: 0}
   m_EntryPosition: {x: 50, y: 120, z: 0}
   m_ExitPosition: {x: 800, y: 110, z: 0}
