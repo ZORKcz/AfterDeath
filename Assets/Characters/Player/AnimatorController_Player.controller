@@ -16,6 +16,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 188d59f5fbf8c6343928e0a23963f6f6, type: 3}
   - {fileID: 8300000, guid: 188d59f5fbf8c6343928e0a23963f6f6, type: 3}
   - {fileID: 8300000, guid: 188d59f5fbf8c6343928e0a23963f6f6, type: 3}
+  outputAudioMixerGroup: {fileID: -6801603979056470117, guid: bd25c6701c588b74aae3e39481ab0d65, type: 2}
   randomIndex: 0
   volume: 1
   playOnEnter: 1
@@ -343,6 +344,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 188d59f5fbf8c6343928e0a23963f6f6, type: 3}
   - {fileID: 8300000, guid: 188d59f5fbf8c6343928e0a23963f6f6, type: 3}
   - {fileID: 8300000, guid: 188d59f5fbf8c6343928e0a23963f6f6, type: 3}
+  outputAudioMixerGroup: {fileID: -6801603979056470117, guid: bd25c6701c588b74aae3e39481ab0d65, type: 2}
   randomIndex: 0
   volume: 1
   playOnEnter: 1
@@ -702,6 +704,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 188d59f5fbf8c6343928e0a23963f6f6, type: 3}
   - {fileID: 8300000, guid: 188d59f5fbf8c6343928e0a23963f6f6, type: 3}
   - {fileID: 8300000, guid: 188d59f5fbf8c6343928e0a23963f6f6, type: 3}
+  outputAudioMixerGroup: {fileID: -6801603979056470117, guid: bd25c6701c588b74aae3e39481ab0d65, type: 2}
   randomIndex: 0
   volume: 1
   playOnEnter: 1
@@ -724,6 +727,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 05d59680e03ffbd44a4dfff7374e927d, type: 3}
   - {fileID: 8300000, guid: 05d59680e03ffbd44a4dfff7374e927d, type: 3}
   - {fileID: 8300000, guid: 05d59680e03ffbd44a4dfff7374e927d, type: 3}
+  outputAudioMixerGroup: {fileID: -6801603979056470117, guid: bd25c6701c588b74aae3e39481ab0d65, type: 2}
   randomIndex: 0
   volume: 1
   playOnEnter: 0
@@ -1386,12 +1390,6 @@ AnimatorStateMachine:
   - {fileID: 7309994039539673345}
   m_EntryTransitions: []
   m_StateMachineTransitions:
-  - first: {fileID: -345202690403281306}
-    second:
-    - {fileID: 5632578108791671541}
-  - first: {fileID: 5056679050833538460}
-    second:
-    - {fileID: 8826762479314641046}
   - first: {fileID: 1291911599878290429}
     second:
     - {fileID: 8864520732108549705}
@@ -1402,6 +1400,12 @@ AnimatorStateMachine:
     second:
     - {fileID: -1831703174463671732}
     - {fileID: -7354458364582078166}
+  - first: {fileID: -345202690403281306}
+    second:
+    - {fileID: 5632578108791671541}
+  - first: {fileID: 5056679050833538460}
+    second:
+    - {fileID: 8826762479314641046}
   m_StateMachineBehaviours: []
   m_AnyStatePosition: {x: 730, y: 70, z: 0}
   m_EntryPosition: {x: 50, y: 120, z: 0}
@@ -1449,6 +1453,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 188d59f5fbf8c6343928e0a23963f6f6, type: 3}
   - {fileID: 8300000, guid: 188d59f5fbf8c6343928e0a23963f6f6, type: 3}
   - {fileID: 8300000, guid: 188d59f5fbf8c6343928e0a23963f6f6, type: 3}
+  outputAudioMixerGroup: {fileID: -6801603979056470117, guid: bd25c6701c588b74aae3e39481ab0d65, type: 2}
   randomIndex: 0
   volume: 1
   playOnEnter: 1
@@ -1554,6 +1559,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: e792a89289b79e64b92bcf0d65a3e820, type: 3}
   - {fileID: 8300000, guid: 51153ea298a78d84b9b7071d2f6f1187, type: 3}
   - {fileID: 8300000, guid: d6cc8aa02a1540f458eed5cbd6f7006e, type: 3}
+  outputAudioMixerGroup: {fileID: -6801603979056470117, guid: bd25c6701c588b74aae3e39481ab0d65, type: 2}
   randomIndex: 0
   volume: 1
   playOnEnter: 1
@@ -1634,6 +1640,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 24df5ae5517f23e468bb1ba962d4ddd0, type: 3}
   - {fileID: 8300000, guid: 1c6f281f758c9fe4cad1bdb87a4be637, type: 3}
   - {fileID: 8300000, guid: 1c6f281f758c9fe4cad1bdb87a4be637, type: 3}
+  outputAudioMixerGroup: {fileID: -6801603979056470117, guid: bd25c6701c588b74aae3e39481ab0d65, type: 2}
   randomIndex: 0
   volume: 1
   playOnEnter: 1
@@ -1759,6 +1766,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 188d59f5fbf8c6343928e0a23963f6f6, type: 3}
   - {fileID: 8300000, guid: 188d59f5fbf8c6343928e0a23963f6f6, type: 3}
   - {fileID: 8300000, guid: 188d59f5fbf8c6343928e0a23963f6f6, type: 3}
+  outputAudioMixerGroup: {fileID: -6801603979056470117, guid: bd25c6701c588b74aae3e39481ab0d65, type: 2}
   randomIndex: 0
   volume: 1
   playOnEnter: 1

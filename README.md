@@ -3,8 +3,8 @@ Simple 2D pixel-art game. Experience Odnrej Vylomil's rebirth.
 ## About us
 Our Team:
 ```
-- Bořek Drašar: Project Manager, main programmer
-- Tomáš Báňa: Animator, lore writer, UI designer, dabing managment
+- Bořek Drašar: Project Manager, main programmer, animations of player, enemy and objects
+- Tomáš Báňa: Cutscene animator, lore writer, UI designer, dabing managment
 - Jakub Dvořák: Graphics desing
 ```
 

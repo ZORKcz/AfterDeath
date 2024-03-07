@@ -126,6 +126,57 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+<<<<<<< HEAD
+=======
+--- !u!114 &-5861472944645666415
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3efbc56886955024e85dfdc96a5c8faa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHasDied: 0
+  soundToPlay:
+  - {fileID: 8300000, guid: d7b3edca22f52eb49858dfbceb69ebdd, type: 3}
+  - {fileID: 8300000, guid: d7b3edca22f52eb49858dfbceb69ebdd, type: 3}
+  - {fileID: 8300000, guid: d7b3edca22f52eb49858dfbceb69ebdd, type: 3}
+  outputAudioMixerGroup: {fileID: -6801603979056470117, guid: bd25c6701c588b74aae3e39481ab0d65, type: 2}
+  randomIndex: 0
+  volume: 1
+  playOnEnter: 1
+  playOnExit: 0
+  playAfterDelay: 0
+  playDelay: 0.25
+--- !u!114 &-5641043036134651116
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3efbc56886955024e85dfdc96a5c8faa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHasDied: 0
+  soundToPlay:
+  - {fileID: 8300000, guid: e49641715a640034cae197e320aebd72, type: 3}
+  - {fileID: 8300000, guid: e49641715a640034cae197e320aebd72, type: 3}
+  - {fileID: 8300000, guid: e49641715a640034cae197e320aebd72, type: 3}
+  outputAudioMixerGroup: {fileID: -6801603979056470117, guid: bd25c6701c588b74aae3e39481ab0d65, type: 2}
+  randomIndex: 0
+  volume: 1
+  playOnEnter: 1
+  playOnExit: 0
+  playAfterDelay: 0
+  playDelay: 0.25
+>>>>>>> main
 --- !u!1102 &-4238292949882015297
 AnimatorState:
   serializedVersion: 6
@@ -192,6 +243,33 @@ AnimatorTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 1
+<<<<<<< HEAD
+=======
+--- !u!114 &-2985142569926920093
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3efbc56886955024e85dfdc96a5c8faa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHasDied: 0
+  soundToPlay:
+  - {fileID: 8300000, guid: 93a286dea591bea4d9e7183858eed5a8, type: 3}
+  - {fileID: 8300000, guid: 93a286dea591bea4d9e7183858eed5a8, type: 3}
+  - {fileID: 8300000, guid: 93a286dea591bea4d9e7183858eed5a8, type: 3}
+  outputAudioMixerGroup: {fileID: -6801603979056470117, guid: bd25c6701c588b74aae3e39481ab0d65, type: 2}
+  randomIndex: 0
+  volume: 1
+  playOnEnter: 1
+  playOnExit: 0
+  playAfterDelay: 0
+  playDelay: 1
+>>>>>>> main
 --- !u!1107 &-562652447876152146
 AnimatorStateMachine:
   serializedVersion: 6

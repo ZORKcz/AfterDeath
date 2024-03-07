@@ -7,6 +7,7 @@ public class CanvasScript : MonoBehaviour
 {
     public GameObject[] UIElementsHlavniMenu;
     public GameObject[] UIElementsSettingsMenu;
+    public GameObject[] UIElementsLevelSelect;
     public GameObject skeletonRemains;
     public GameObject skeleton;
     public GameObject mainMenuSoundtrack;
@@ -54,6 +55,10 @@ public class CanvasScript : MonoBehaviour
         {
             UIElement.SetActive(false);
         }
+        foreach(GameObject element in UIElementsLevelSelect)
+        {
+            element.SetActive(false);
+        }
     }
 
     public void OnQuitClick()
@@ -74,7 +79,18 @@ public class CanvasScript : MonoBehaviour
         videoRenderer.SetActive(true);
         StartCoroutine(waitTillVideoEnds());
     }
-
+    public void LevelSelectButton()
+    {
+        skeletonRemains.transform.position = new Vector3(-20f, -3.06f);
+        foreach (GameObject element in UIElementsHlavniMenu)
+        {
+            element.SetActive(false);
+        }
+        foreach(GameObject element in UIElementsLevelSelect)
+        {
+            element.SetActive(true);
+        }
+    }
     IEnumerator waitTillVideoEnds()
     {
         yield return new WaitForSeconds(25f);

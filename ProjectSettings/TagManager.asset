@@ -4,8 +4,15 @@
 TagManager:
   serializedVersion: 2
   tags:
+<<<<<<< HEAD
   - Key
   - Spike
+=======
+  - leatherBoots
+  - axe
+  - arrow
+  - armor
+>>>>>>> main
   layers:
   - Default
   - TransparentFX
