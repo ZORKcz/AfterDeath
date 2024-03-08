@@ -7,10 +7,12 @@ using UnityEngine.UI;
 using TMPro;
 public class settingsMenu : MonoBehaviour
 {
-    public AudioMixer audioMixer;
+    public AudioMixer audioMixerMusic;
     public TMPro.TMP_Dropdown resolutionDropdown;
-    public Slider volumeSlider;
+    public Slider volumeSliderMusic;
+    public Slider sfxSlider;
     float currentVolume;
+    float currentSFXVolume;
     Resolution[] resolutions;
     int currentRefreshRate;
     private List<Resolution> filteredResolutions;
@@ -23,7 +25,7 @@ public class settingsMenu : MonoBehaviour
         filteredResolutions = new List<Resolution>();
         currentRefreshRate = Screen.currentResolution.refreshRate;
 
-        for(int i = 0;i < resolutions.Length;i++)
+        for (int i = 0; i < resolutions.Length; i++)
         {
             if (resolutions[i].refreshRate == currentRefreshRate)
             {
@@ -49,8 +51,14 @@ public class settingsMenu : MonoBehaviour
 
     public void SetVolume(float volume)
     {
-        audioMixer.SetFloat("Volume", volume);
+        audioMixerMusic.SetFloat("music", volume);
+        //audioMixerMusic.SetFloat("sfx", volume);
         currentVolume = volume;
+    }
+    public void SetVolumeSFX(float volume)
+    {
+        audioMixerMusic.SetFloat("sfx", volume);
+        currentSFXVolume = volume;
     }
     public void SetFullscreen(bool isFullScreen)
     {
@@ -66,6 +74,7 @@ public class settingsMenu : MonoBehaviour
         PlayerPrefs.SetInt("ResolutionPreferences", resolutionDropdown.value);
         PlayerPrefs.SetInt("FullscreenPreferences", Convert.ToInt32(Screen.fullScreen));
         PlayerPrefs.SetFloat("VolumePreferences", currentVolume);
+        PlayerPrefs.SetFloat("SFXPreferences", currentSFXVolume);
     }
     public void LoadSettings(int currentResolutionIndex)
     {
@@ -87,11 +96,19 @@ public class settingsMenu : MonoBehaviour
         }
         if (PlayerPrefs.HasKey("VolumePreferences"))
         {
-            volumeSlider.value = PlayerPrefs.GetFloat("VolumePreferences");
+            volumeSliderMusic.value = PlayerPrefs.GetFloat("VolumePreferences");
         }
         else
         {
-            volumeSlider.value = PlayerPrefs.GetFloat("VolumePreferences");
+            volumeSliderMusic.value = PlayerPrefs.GetFloat("VolumePreferences");
+        }
+        if (PlayerPrefs.HasKey("SFXPreferences"))
+        {
+            sfxSlider.value = PlayerPrefs.GetFloat("SFXPreferences");
+        }
+        else
+        {
+            sfxSlider.value = PlayerPrefs.GetFloat("SFXPreferences");
         }
     }
     public void DefaultSettings()

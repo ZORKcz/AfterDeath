@@ -7,6 +7,7 @@ public class CanvasScript : MonoBehaviour
 {
     public GameObject[] UIElementsHlavniMenu;
     public GameObject[] UIElementsSettingsMenu;
+    public GameObject[] UIElementsLevelSelect;
     public GameObject skeletonRemains;
     public GameObject skeleton;
     public GameObject mainMenuSoundtrack;
@@ -32,7 +33,7 @@ public class CanvasScript : MonoBehaviour
     {
         skeleton.SetActive(false);
         skeletonRemains.transform.position = new Vector3(-20f, -3.06f);
-        foreach(GameObject UIElement in UIElementsHlavniMenu)
+        foreach (GameObject UIElement in UIElementsHlavniMenu)
         {
             UIElement.SetActive(false);
         }
@@ -46,13 +47,17 @@ public class CanvasScript : MonoBehaviour
         mainMenuSoundtrack.SetActive(true);
         skeletonRemains.SetActive(true);
         skeletonRemains.transform.position = new Vector3(-3.7f, -3.75f);
-        foreach (GameObject UIElement in UIElementsHlavniMenu)
-        {
-            UIElement.SetActive(true);
-        }
         foreach (GameObject UIElement in UIElementsSettingsMenu)
         {
             UIElement.SetActive(false);
+        }
+        foreach (GameObject element in UIElementsLevelSelect)
+        {
+            element.SetActive(false);
+        }
+        foreach (GameObject UIElement in UIElementsHlavniMenu)
+        {
+            UIElement.SetActive(true);
         }
     }
 
@@ -66,18 +71,31 @@ public class CanvasScript : MonoBehaviour
         jeMozneSkipnoutCutscenu = true;
         foreach (GameObject UIElement in UIElementsHlavniMenu)
         {
-            UIElement.SetActive(true);
+            UIElement.SetActive(false);
         }
         mainMenuSoundtrack.SetActive(false);
+        
         skeletonRemains.SetActive(false);
         videoPlayer.SetActive(true);
         videoRenderer.SetActive(true);
         StartCoroutine(waitTillVideoEnds());
     }
-
+    public void LevelSelectButton()
+    {
+        skeletonRemains.transform.position = new Vector3(-20f, -3.06f);
+        foreach (GameObject element in UIElementsHlavniMenu)
+        {
+            element.SetActive(false);
+        }
+        foreach (GameObject element in UIElementsLevelSelect)
+        {
+            element.SetActive(true);
+        }
+    }
     IEnumerator waitTillVideoEnds()
     {
         yield return new WaitForSeconds(25f);
         SceneManager.LoadScene(1);
     }
 }
+
