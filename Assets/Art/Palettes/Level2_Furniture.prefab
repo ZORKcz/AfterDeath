@@ -470,6 +470,42 @@ Tilemap:
       e31: 0
       e32: 0
       e33: 1
+  - m_RefCount: 0
+    m_Data:
+      e00: 1.153026e+11
+      e01: NaN
+      e02: -7.79157e+11
+      e03: 0
+      e10: 1.96e-43
+      e11: NaN
+      e12: 4.5905e-41
+      e13: 0
+      e20: NaN
+      e21: 0
+      e22: 1.15302466e+11
+      e23: 0
+      e30: 0
+      e31: 7.34684e-40
+      e32: 1.96e-43
+      e33: 1
+  - m_RefCount: 0
+    m_Data:
+      e00: 1.153026e+11
+      e01: NaN
+      e02: -7.79157e+11
+      e03: 0
+      e10: 1.96e-43
+      e11: NaN
+      e12: 4.5905e-41
+      e13: 0
+      e20: NaN
+      e21: 0
+      e22: 1.15302466e+11
+      e23: 0
+      e30: 0
+      e31: 7.34684e-40
+      e32: 1.96e-43
+      e33: 1
   m_TileColorArray:
   - m_RefCount: 29
     m_Data: {r: 1, g: 1, b: 1, a: 1}
@@ -577,7 +613,7 @@ Transform:
   m_Children:
   - {fileID: 3333769247102244217}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!156049354 &3928068886674107325
 Grid:
@@ -591,7 +627,7 @@ Grid:
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
---- !u!114 &5453746413554135004
+--- !u!114 &8057934365913378113
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

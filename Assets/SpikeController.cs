@@ -14,7 +14,7 @@ public class SpikeController : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        polygonCollider2D = GetComponent <PolygonCollider2D>();
+        polygonCollider2D = GetComponent<PolygonCollider2D>();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -23,7 +23,7 @@ public class SpikeController : MonoBehaviour
         {
             Damageable damageable = collision.gameObject.GetComponent<Damageable>();
 
-            if (damageable != null) 
+            if (damageable != null)
             {
                 Vector2 deliveredKnockBack = transform.localScale.x > 0 ? knockback : new Vector2(-knockback.x, knockback.y);
 
