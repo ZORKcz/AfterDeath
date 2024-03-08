@@ -31,7 +31,7 @@ public class leatherBoots : MonoBehaviour
         Debug.Log("Courutine bezi");
         startCourutineOnce = false;
         list.OnSpeedPickUp();
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(20);
         if (!consoleScript.speedHasBeenAdded)
         {
             list.OnSpeedPickUpReturn();

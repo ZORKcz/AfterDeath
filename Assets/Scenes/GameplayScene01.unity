@@ -57198,6 +57198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05eb91902638e064c9dc711edc1e2cf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 1
   canvasItems:
   - {fileID: 1224506679}
   - {fileID: 130625608}

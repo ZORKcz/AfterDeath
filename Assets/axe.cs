@@ -30,7 +30,7 @@ public class axe : MonoBehaviour
         Debug.Log("Courutine bezi");
         startCourutineOnce = false;
         list.OnAxePickUp();
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(20);
         if (!consoleScript.strengthHasBeenAdded)
         {
             list.OnAxePickUpReturn();

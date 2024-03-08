@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class deathMenuScript : MonoBehaviour
 {
-
+    public int index;
     public GameObject[] canvasItems;
     public Damageable health;
     public static bool isDead;
@@ -26,7 +26,7 @@ public class deathMenuScript : MonoBehaviour
     }
     public void OnRestartButtonClick()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(index);
     }
 
     public void OnQuitButtonClick()

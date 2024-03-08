@@ -30,7 +30,7 @@ public class armor : MonoBehaviour
         Debug.Log("Courutine bezi");
         startCourutineOnce = false;
         list.OnArmorPickUp();
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(20);
         list.OnArmorPickUpReturn();
         list.armorIsActive = false;
         startCourutineOnce = true;
