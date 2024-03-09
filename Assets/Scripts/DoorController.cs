@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class DoorController : MonoBehaviour
 {
+    public int index;
     public bool locked;
 
     private Animator anim;
@@ -25,7 +26,7 @@ public class DoorController : MonoBehaviour
 
         if(!locked && distance < 0.5f)
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(index);
         }
     }
 
